@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+}
+audio{
+    margin-top: 50px;
+    min-height: 50px;
+}
+body{
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('../media/images/back.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+img{
+    object-fit: contain !important;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex {
+    background-color: #e61515;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 15px;
+    border: double black 10px;
+    display: flex;
+}
+.text-screen {
+    background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+    padding: 5px;
+    border-radius: 3px;
+    border: inset #879a65 3px;
+    min-height: 4vh;
+    margin: 5px 0px;
+}
+.moves-screen{
+    width: 103%;
+    min-height: 25vh;
+    max-height: 25vh;
+    overflow-y: scroll;
+}
+.image-screen {
+    background: linear-gradient(14deg, rgb(211, 233, 169) 60%, rgb(193, 217, 144) 65%);
+    padding: 5px;
+    border-radius: 3px;
+    font-family: "VT323";
+    border: inset #879a65 3px;
+    min-height: 35vh;
+}
+.image-pokemon{
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    image-rendering: pixelated;
+}
+.panel {
+    width: 50%;
+    padding: 10px;
+    border: inset #b31818 3px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.panel-container{
+    flex-direction: column;
+    margin-left: 10px;
+}
+.panel-right{
+    width: 93%;
+    flex-direction: row;
+    height: 15vh;
+    align-items: center;
+    margin: 0;
+}
+.panel-right-down{
+    width: 93%;
+    flex-direction: row;
+    height: 15vh;
+    align-items: center;
+}
+.name{
+    font-family: 'VT323', monospace;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.number{
+    float: right;
+}
+.details{
+    font-size: 1.2em;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+.stats-screen{
+    width: 90%;
+    max-height: 10vh;
+    min-height: 10vh;
+}
+.types-screen{
+    width: 90%;
+    background: linear-gradient(14deg, rgb(128, 129, 125) 60%, rgb(156, 158, 151) 65%);
+    padding: 5px;
+    border-radius: 3px;
+    max-height: 10vh;
+    min-height: 10vh;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stat{
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+.type{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 2.2em;
+    max-height: 40px;
+    text-align: center;
+}
+.bug{
+    background-color: #889812;
+}
+.dark{
+    background-color: #392e22;
+}
+.dragon{
+    background-color: #6f5ada;
+}
+.electric{
+    background-color: #e39202;
+}
+.fairy{
+    background-color: #f8acf4;
+}
+.fighting{
+    background-color: #51230c;
+}
+.fire{
+    background-color: #cc2900;
+}
+.flying{
+    background-color: #5a73d6;
+}
+.ghost{
+    background-color: #403f8b;
+}
+.grass{
+    background-color: #389802;
+}
+.ground{
+    background-color: #d0b253;
+}
+.ice{
+    background-color: #6dd2f3;
+}
+.normal{
+    background-color: #c5c1b6;
+}
+.poison{
+    background-color: #8b3d8b;
+}
+.psychic{
+    background-color: #ef3e7c;
+}
+.rock{
+    background-color: #a0853b;
+}
+.steel{
+    background-color: #8c8b99;
+}
+.water{
+    background-color: #0b67c3;
+}
+.titulo{
+    font-size: 1.5em;
+    font-family: "VT323";
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.input{
+    min-width: 30%;
+    min-height: 4vh;
+    font-size: 1.3em;
+    outline: none;
+    border:#389802;
+    font-family: "VT323";
+    background-color: #d4e7ee;
+    border-radius: 10px;
+}
+.boton{
+    min-width: 36%;
+    min-height: 4vh;
+    background-color: #0b67c3;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: "VT323";
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+        font-size: 10px !important;
+    }
+    .pokedex {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .text-screen{
+        min-height: 10px;
+    }
+    .image-screen {
+        min-height: 30vh;
+    }
+    .panel {
+        width: 93%;
+    }
+    .panel-container{
+        width: 93%;
+        margin: 0;
+    }
+    .panel-right{
+        width: 90%;
+    }
+    .text-screen > .moves-screen{
+        width: 103%;
+        height: 200px;
+    }
+    .titulo{
+        font-size: 2.5em;
+    }
+    .panel-right-down{
+        max-height: 10vh !important;
+    }
+    .moves-screen{
+        min-height: 5vh !important;
+        max-height: 5vh !important;
+    }
+    .type{
+        border-radius: 25px;
+        height: 3vh;
+    }
+    .input{
+        width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .pokedex {
+        width: 60vw; 
+    }
+    .types-screen{
+        flex-direction: column;
+    }
+    .stats-screen{
+        font-size: 1.4em;
+    }
+    .details{
+        font-size: 1.7em;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .pokedex {
+        width: 60vw; 
+    }
+    .panel-right{
+        flex-direction: column;
+    }
+    .panel{
+        flex-direction: column;
+    }
+    .panel-right{
+        flex-direction: column;
+        height: 30vh;
+    }
+
+
+  }

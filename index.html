@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Pokedex</title>
+</head>
+<body class="center">
+    <div class="pokedex">
+        <div class="panel">
+
+            <div class="text-screen" id="pantalla">
+                <span id="name" class="name"></span>
+               <span id="number" class="name number"></span>
+            </div>
+
+            <div class="image-screen">
+                <img id="pokeImg" src="./media/images/undefined.png" alt="imágen pokemon" class="image-pokemon">
+            </div>
+
+            <div class="text-screen">
+                <span class="name details" id="detalles"></span>
+            </div>
+
+            <div>
+                <input type="text" id="pokeName" class="input">
+                <button onclick="fetchPokemon()" class="boton">Enviar</button>
+            </div>
+
+        </div>
+        <div class="panel panel-container">
+           
+            <div class="panel panel-right">
+                <div class="panel-right">
+                   <p class="titulo">STATS</p>
+                   <div id="stats-screen" class="text-screen stats-screen"></div>
+                </div>
+                <div class="panel-right">
+                    <p class="titulo">TYPES</p>
+                    <div id="types-screen" class="types-screen"></div>
+                 </div>
+            </div>
+            <div class="panel-right-down">
+                <p class="titulo">MOVES</p>
+                <div id="moves-screen" class="text-screen moves-screen"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <audio controls autoplay volume="0.2">
+        <source id="myaudio" src="media/music/backmusic.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
